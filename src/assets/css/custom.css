@@ -1,0 +1,43 @@
+.path-auth .form-group input {
+  background-image: none;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.path-auth .form-group label {
+  font-size: 0.9rem;
+}
+
+.path-auth #to-recover {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.path-auth li.text-muted {
+  font-size: 0.8rem;
+  list-style-type: none;
+}
+
+.div_middleLine_text {
+  margin: 50px -1.5rem 35px -1.5rem;
+  color: #e9ecef;
+}
+
+.div_middleLine_text h6 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e9ecef;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.div_middleLine_text h6 span {
+  font-size: 0.8rem;
+  background:#fff;
+  padding:0 10px;
+}
+
+.path-auth a.btn-facebook, .path-auth a.btn-twitter {
+  width: 100%;
+}

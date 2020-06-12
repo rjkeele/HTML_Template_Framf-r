@@ -35721,6 +35721,12 @@ ul.list-icons li i {
   text-align: center;
 }
 
+.auth-wrapper .auth-box .logo {
+  padding: 25px 0px;
+  margin: 25px -1.5rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
 .auth-wrapper .auth-box.on-sidebar {
   position: absolute;
   top: 0;

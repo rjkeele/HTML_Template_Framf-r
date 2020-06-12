@@ -14,6 +14,7 @@
     <link rel="canonical" href="https://www.wrappixel.com/templates/monsteradmin/" />
     <!-- Custom CSS -->
     <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/custom.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,7 +23,7 @@
 <![endif]-->
 </head>
 
-<body>
+<body class="path-auth">
     <div class="main-wrapper">
         <!-- ============================================================== -->
         <!-- Preloader - style you can find in spinners.css -->
@@ -43,49 +44,63 @@
             <div class="auth-box p-4 bg-white rounded">
                 <div id="loginform">
                     <div class="logo">
-                        <h3 class="box-title mb-3">Sign In</h3>
+                        <h3 class="box-title mb-3">Welcome to Framför AODB!</h3>
                     </div>
                     <!-- Form -->
-                    <div class="row">
+                    <div class="row text-left">
                         <div class="col-12">
                             <form class="form-horizontal mt-3 form-material" id="loginform" action="index.html">
-                                <div class="form-group mb-3">
-                                    <div class="">
-                                        <input class="form-control" type="text" required="" placeholder="Username"> </div>
+                                <div class="form-group mb-3 ">
+                                    <div class="col-xs-12">
+                                        <label for="reg_email">Your Email</label>
+                                        <input class="form-control" id="reg_email" type="text" required="">
+                                    </div>
                                 </div>
-                                <div class="form-group mb-4">
-                                    <div class="">
-                                        <input class="form-control" type="password" required="" placeholder="Password"> </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="d-flex">
-                                        <div class="checkbox checkbox-info pt-0">
-                                            <input id="checkbox-signup" type="checkbox" class="material-inputs chk-col-indigo">
-                                            <label for="checkbox-signup"> Remember me </label>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <a href="javascript:void(0)" id="to-recover" class="text-muted float-right"><i class="fa fa-lock mr-1"></i> Forgot pwd?</a>
-                                        </div>
+                                <div class="form-group mb-3 ">
+                                    <div class="col-xs-12">
+                                        <label for="reg_pwd">Password</label>
+                                        <input class="form-control" id="reg_pwd" type="password" required="">
                                     </div>
                                 </div>
                                 <div class="form-group text-center mt-4">
                                     <div class="col-xs-12">
-                                        <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Log In</button>
+                                        <button class="btn btn-success btn-lg btn-block waves-effect waves-light" type="submit">Sign In</button>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 text-center">
-                                        <div class="social mb-3">
-                                            <a href="javascript:void(0)" class="btn  btn-facebook" data-toggle="tooltip" title="Login with Facebook"> <i aria-hidden="true" class="fab fa-facebook-f"></i> </a>
-                                            <a href="javascript:void(0)" class="btn btn-googleplus" data-toggle="tooltip" title="Login with Google"> <i aria-hidden="true" class="fab fa-google-plus"></i> </a>
+                                <div class="form-group">
+                                    <div class="d-flex">
+                                        <div class="checkbox checkbox-info pt-0">
+                                            <a href="javascript:void(0)" id="to-recover" class="float-right"><i class="fa fa-lock mr-1"></i> Forgot your password?</a>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <li class="text-muted">
+                                                Don't have an account?
+                                                <a href="javascript:void(0)" id="to-recover" class="float-right">Request</a>
+                                            </li>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group mb-0 mt-4">
-                                    <div class="col-sm-12 justify-content-center d-flex">
-                                        <p>Don't have an account? <a href="authentication-register1.html" class="text-info font-weight-normal ml-1">Sign Up</a></p>
-                                    </div>
+
+                                <div class="div_middleLine_text">
+                                    <h6><span> Sign in with social </span></h6>
                                 </div>
+
+                                <!--<div class="row">-->
+                                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 text-center">
+                                        <div class="social mb-3">
+                                            <a href="javascript:void(0)" class="btn  btn-facebook" data-toggle="tooltip" title="Login with Facebook"> <i aria-hidden="true" class="fab fa-facebook"></i>
+                                                Sign in with Facebook </a>
+                                        </div>
+                                    </div>
+                                <!--</div>-->
+                                <!--<div class="row">-->
+                                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 text-center">
+                                        <div class="social mb-3">
+                                            <a href="javascript:void(0)" class="btn btn-twitter" data-toggle="tooltip" title="Login with Google"> <i aria-hidden="true" class="fab fa-twitter"></i>
+                                                Sign in with Twitter </a>
+                                        </div>
+                                    </div>
+                                <!--</div>-->
                             </form>
                         </div>
                     </div>
